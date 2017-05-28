@@ -115,16 +115,27 @@ if [[ ! -d $STEP_DIR ]]; then
     # blessed-contrib examples
     #
 
-    BLESSED_URL=https://github.com/yaronn/blessed-contrib/archive/master.tar.gz
-    SRC_DIR=$STEP_DIR/blessed-contrib
+    NODEOS_GIT_URL=https://github.com/luii/nodeos-git/archive/master.tar.gz
+    SRC_DIR=$STEP_DIR/nodeos-git
 
-    mkdir -p $SRC_DIR                                                 &&
-    curl -L $BLESSED_URL | tar xzf - -C $SRC_DIR --strip-components=1 &&
+    mkdir -p $SRC_DIR                                                    &&
+    curl -L $NODEOS_GIT_URL | tar xzf - -C $SRC_DIR --strip-components=1 &&
     (
       cd $SRC_DIR
-
-      eval "$NPMi" || exit 25
+      eval BUILD_ONLY=1 "$NPMI" || exit 25
     ) || exit $?
+
+
+    #BLESSED_URL=https://github.com/yaronn/blessed-contrib/archive/master.tar.gz
+    #SRC_DIR=$STEP_DIR/blessed-contrib
+
+    #mkdir -p $SRC_DIR                                                 &&
+    #curl -L $BLESSED_URL | tar xzf - -C $SRC_DIR --strip-components=1 &&
+    #(
+    #  cd $SRC_DIR
+
+    #  eval "$NPMi" || exit 25
+    #) || exit $?
 
 
     # #
