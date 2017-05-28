@@ -4,7 +4,7 @@
   "scripts": {
     "BigRedButton": "scripts/BigRedButton",
     "build": "scripts/build",
-    "install": "buildDependencies && npm run build",
+    "install": "prebuild-install -d https://github.com/NodeOS/nodeos-usersfs/releases/download/v{version}/{platform}-{arch}.tar.gz || (buildDependencies && npm run build)",
     "test": "scripts/test",
     "unbuild": "scripts/unbuild"
   },
