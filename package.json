@@ -33,8 +33,7 @@
     "ntp-client",
     "performance",
     "pstree",
-    "slap",
-    "nodeos-git"
+    "slap"
   ],
   "dependencies": {
     "builddependencies": "0.0.1",
@@ -60,8 +59,7 @@
     "palmtree",
     "performance",
     "pstree",
-    "slap",
-    "nodeos-git"
+    "slap"
   ],
   "devDependencies": {
     "bin-man": "^0.2.0",
@@ -87,8 +85,7 @@
     "pstree": "^0.0.1",
     "qemu": "^2.8.0",
     "slap": "^0.1.61",
-    "tar-fs": "^1.15.2",
-    "nodeos-git": "luii/nodeos-git"
+    "tar-fs": "^1.15.2"
   },
   "description": "Generate a read-write users filesystem for NodeOS for demo purposses",
   "repository": {
