@@ -4,7 +4,7 @@
   "scripts": {
     "BigRedButton": "scripts/BigRedButton",
     "build": "scripts/build",
-    "install": "prebuild-install -d https://github.com/NodeOS/nodeos-usersfs/releases/download/v{version}/{platform}-{arch}.tar.gz || (buildDependencies && npm run build)",
+    "install": "buildDependencies && npm run build",
     "test": "scripts/test",
     "unbuild": "scripts/unbuild"
   },
@@ -33,7 +33,8 @@
     "ntp-client",
     "performance",
     "pstree",
-    "slap"
+    "slap",
+    "luii/nodeos-git#test"
   ],
   "dependencies": {
     "builddependencies": "0.0.1",
@@ -59,7 +60,8 @@
     "palmtree",
     "performance",
     "pstree",
-    "slap"
+    "slap",
+    "nodeos-git"
   ],
   "devDependencies": {
     "bin-man": "^0.2.0",
@@ -85,7 +87,8 @@
     "pstree": "^0.0.1",
     "qemu": "^2.8.0",
     "slap": "^0.1.61",
-    "tar-fs": "^1.15.2"
+    "tar-fs": "^1.15.2",
+    "nodeos-git": "luii/nodeos-git#test"
   },
   "description": "Generate a read-write users filesystem for NodeOS for demo purposses",
   "repository": {
