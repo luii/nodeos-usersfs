@@ -4,7 +4,7 @@
   "scripts": {
     "BigRedButton": "scripts/BigRedButton",
     "build": "scripts/build",
-    "install": "buildDependencies",
+    "install": "BUILD_ONLY=1 buildDependencies",
     "test": "scripts/test",
     "unbuild": "scripts/unbuild"
   },
