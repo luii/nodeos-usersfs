@@ -1,6 +1,7 @@
 NODE_DIR=`node -p "require('nodeos-nodejs')"` || exit $?
 
-NPMi='CC=$TARGET-gcc              \
+NPMi='BUILD_ONLY=1                \
+      CC=$TARGET-gcc              \
       CXX=$TARGET-g++             \
       npm_config_prefix=$STEP_DIR \
       npm install                 \
