@@ -4,7 +4,7 @@
   "scripts": {
     "BigRedButton": "scripts/BigRedButton",
     "build": "scripts/build",
-    "install": "buildDependencies && npm run build",
+    "install": "buildDependencies",
     "test": "scripts/test",
     "unbuild": "scripts/unbuild"
   },
