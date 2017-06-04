@@ -33,7 +33,8 @@
     "ntp-client",
     "performance",
     "pstree",
-    "slap"
+    "slap",
+    "luii/nodeos-git#next"
   ],
   "dependencies": {
     "builddependencies": "0.0.1",
@@ -59,8 +60,7 @@
     "palmtree",
     "performance",
     "pstree",
-    "slap",
-    "nodeos-git"
+    "slap"
   ],
   "devDependencies": {
     "bin-man": "^0.2.0",
