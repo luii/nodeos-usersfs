@@ -95,6 +95,9 @@ if [[ ! -d $STEP_DIR ]]; then
     PACKAGES=`node -p "require('./package.json').nodeosDependenciesNodeos.join(' ')"`
     eval "$NPMi" -g $PACKAGES || exit 22
 
+    eval "$INSTALL_NODEGIT" || exit 22
+
+
     # Set `nsh` as default `sh` shell
     ln -s nsh $STEP_DIR/bin/sh || exit 23
 

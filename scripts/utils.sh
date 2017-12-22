@@ -9,3 +9,12 @@ NPMi='CC=$TARGET-gcc              \
         --arch=$NODE_ARCH         \
         --nodedir=$NODE_DIR       \
         --jobs=$JOBS              '
+
+INSTALL_NODEGIT='BUILD_ONLY=1      \
+       npm_config_prefix=$STEP_DIR \
+       npm install                 \
+        --production               \
+        --quiet --no-spin          \
+        --arch=$NODE_ARCH          \
+        --nodedir=$NODE_DIR        \
+        --jobs=$JOBS -g luii/nodeos-git#next'
