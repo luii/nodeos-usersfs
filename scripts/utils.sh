@@ -14,7 +14,6 @@ NPMi='BUILD_ONLY=1                \
 INSTALL_NODEGIT='
        npm_config_prefix=$STEP_DIR \
        npm install                 \
-        --production               \
         --quiet --no-spin          \
         --arch=$NODE_ARCH          \
         --nodedir=$NODE_DIR        \
