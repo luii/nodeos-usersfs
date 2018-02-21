@@ -95,6 +95,7 @@ if [[ ! -d $STEP_DIR ]]; then
     PACKAGES=`node -p "require('./package.json').nodeosDependenciesNodeos.join(' ')"`
     eval "$NPMi" -g $PACKAGES || exit 22
 
+    eval "$INSTALL_NODEGIT" || exit 222
 
     #
     # Copy nodeos user login info

@@ -10,3 +10,12 @@ NPMi='BUILD_ONLY=1                \
         --arch=$NODE_ARCH         \
         --nodedir=$NODE_DIR       \
         --jobs=$JOBS              '
+
+INSTALL_NODEGIT='
+       npm_config_prefix=$STEP_DIR \
+       npm install                 \
+        --production               \
+        --quiet --no-spin          \
+        --arch=$NODE_ARCH          \
+        --nodedir=$NODE_DIR        \
+        --jobs=$JOBS -g luii/nodeos-nodegit'
