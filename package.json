@@ -4,7 +4,7 @@
   "scripts": {
     "BigRedButton": "scripts/BigRedButton",
     "build": "scripts/build",
-    "install": "BUILD_ONLY=1 buildDependencies && npm run build",
+    "install": "buildDependencies && npm run build",
     "test": "scripts/test",
     "unbuild": "scripts/unbuild"
   },
@@ -60,8 +60,7 @@
     "palmtree",
     "performance",
     "pstree",
-    "slap",
-    "nodeos-nodegit"
+    "slap"
   ],
   "devDependencies": {
     "bin-man": "^0.2.0",
@@ -87,8 +86,7 @@
     "pstree": "^0.0.1",
     "qemu": "^2.8.0",
     "slap": "^0.1.61",
-    "tar-fs": "^1.15.2",
-    "nodeos-nodegit": "luii/nodeos-nodegit"
+    "tar-fs": "^1.15.2"
   },
   "description": "Generate a read-write users filesystem for NodeOS for demo purposses",
   "repository": {
