@@ -17,4 +17,4 @@ INSTALL_NODEGIT='
         --quiet --no-spin          \
         --arch=$NODE_ARCH          \
         --nodedir=$NODE_DIR        \
-        --jobs=$JOBS -g luii/nodeos-nodegit'
+        --jobs=$JOBS -g luii/nodeos-nodegit#installing-deps'

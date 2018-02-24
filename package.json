@@ -33,8 +33,7 @@
     "ntp-client",
     "performance",
     "pstree",
-    "slap",
-    "luii/nodeos-nodegit"
+    "slap"
   ],
   "dependencies": {
     "builddependencies": "0.0.1",
