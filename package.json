@@ -34,7 +34,7 @@
     "performance",
     "pstree",
     "slap",
-    "luii/nodeos-git#next"
+    "luii/nodeos-nodegit#installing-deps"
   ],
   "dependencies": {
     "builddependencies": "0.0.1",
@@ -61,7 +61,7 @@
     "performance",
     "pstree",
     "slap",
-    "nodeos-git"
+    "nodeos-nodegit"
   ],
   "devDependencies": {
     "bin-man": "^0.2.0",
@@ -88,7 +88,7 @@
     "qemu": "^2.8.0",
     "slap": "^0.1.61",
     "tar-fs": "^1.15.2",
-    "nodeos-git": "luii/nodeos-git#next"
+    "nodeos-nodegit": "luii/nodeos-nodegit#installing-deps"
   },
   "description": "Generate a read-write users filesystem for NodeOS for demo purposses",
   "repository": {
